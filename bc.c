@@ -917,7 +917,7 @@ node* divsn (node*a,node*b){
         return q;   
 }
      
-/**node* power (node*a,node*b){
+node* power (node*a,node*b){
           list p;
           initlist (&p);
           list count;
@@ -935,7 +935,7 @@ node* divsn (node*a,node*b){
                 count=add(count,one);  
           }
           return p;
-}**/
+}
 
 void eval (queue*p,st*s ){
          lnode*temp;
@@ -980,10 +980,10 @@ void eval (queue*p,st*s ){
                                     } 
                                     push(s,c);
                                     break;
-                        /*    case '^':
+                            case '^':
                                     c= power(n2,n1);
                                     push(s,c);
-                                    break;*/
+                                    break;
                                     
                 }    
            
