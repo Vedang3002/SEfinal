@@ -821,7 +821,7 @@ node* mul(node*a,node*b){
             return mul;      
 }
 
-/**node* divsn (node*a,node*b){
+node* divsn (node*a,node*b){
          list count, count1,count2,digits;
                initlist(&count1);
                initlist(&count2);
@@ -917,7 +917,7 @@ node* mul(node*a,node*b){
         return q;   
 }
      
-node* power (node*a,node*b){
+/**node* power (node*a,node*b){
           list p;
           initlist (&p);
           list count;
@@ -972,7 +972,7 @@ void eval (queue*p,st*s ){
                                     c=mul(n1,n2);
                                     push(s,c);
                                    break;  
-                           /* case '/':
+                            case '/':
                                     c=divsn(n2,n1);
                                     if (c==NULL){
                                             printf("div by 0 undefined");
@@ -980,7 +980,7 @@ void eval (queue*p,st*s ){
                                     } 
                                     push(s,c);
                                     break;
-                            case '^':
+                        /*    case '^':
                                     c= power(n2,n1);
                                     push(s,c);
                                     break;*/
