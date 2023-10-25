@@ -5,6 +5,7 @@
 #include"bc.h"
 
 int main(){
+ printf("welcome to bc :)");
 char a;
 //command line argument not used as its displaying synatx err for ( and )
  FILE*p = fopen ("input.txt","w");
@@ -32,6 +33,7 @@ fclose(p);
   init (&st);
   eval (&postq,&st);
   //displayst(&st);
+ printf("answer:");
   printans(st);
   printf("\n");
   
